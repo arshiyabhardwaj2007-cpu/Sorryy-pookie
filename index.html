@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I'm Really Really Sorry</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #FA003F;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      overflow: hidden;
+    }
+
+    .card {
+      background:#F5F5DC;
+      padding: 2.5em;
+      border-radius: 16px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 420px;
+      animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-top: 0.8em;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 3.2em;
+      color: #e63946;
+      animation: beat 1s infinite;
+    }
+
+    .signature {
+      margin-top: 2em;
+      font-style: italic;
+      color: #888;
+    }
+
+    .forgive-button {
+      margin-top: 2em;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      padding: 0.8em 2em;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .forgive-button:hover {
+      background-color: #ff4757;
+      transform: scale(1.1);
+    }
+
+    .cute-character {
+      font-size: 4em;
+      margin-top: 1em;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .thank-you {
+      margin-top: 1.5em;
+      font-size: 1.2em;
+      color: #27ae60;
+      display: none;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>I'm Sorry...</h1>
+    <p>I know I messed up.</p>
+    <p>Please maaf kr do!!!! You mean the world to me!!!</p>
+</p>I loveeeee youuu to the moon and backkkkk💛🌙</p>
+    <p class="signature">– Apka bhola bchaaa😋💕</p>
+
+    <button class="forgive-button" onclick="showMessage()">
+      Maaf kr diya kyaaaa? 😚💗
+    </button>
+
+    <div class="thank-you" id="thankYouMessage"><h1>Hehe</h1>
+      
+      Thankkkk youuuu babyyyyyy 😚💞</div>
+  </div>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById('thankYouMessage');
+      msg.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
